@@ -9,3 +9,4 @@ challenger-hack-rest/bin/target/classes/META-INF/MANIFEST.MF
 challenger-hack-rest/target/classes/br/com/hack/rest/ChallengerHackRestApplication.class
 challenger-hack-rest/target/classes/application.properties
 challenger-hack-rest/target/
+.recommenders/
