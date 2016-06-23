@@ -1,0 +1,11 @@
+.metadata/
+Servers/
+*.project
+*.classpath
+challenger-hack-rest/bin/.settings/org.eclipse.m2e.core.prefs
+challenger-hack-rest/.settings/
+challenger-hack-rest/bin/.settings/org.eclipse.core.resources.prefs
+challenger-hack-rest/bin/target/classes/META-INF/MANIFEST.MF
+challenger-hack-rest/target/classes/br/com/hack/rest/ChallengerHackRestApplication.class
+challenger-hack-rest/target/classes/application.properties
+challenger-hack-rest/target/
