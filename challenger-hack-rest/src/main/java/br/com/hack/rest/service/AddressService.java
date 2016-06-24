@@ -12,7 +12,4 @@ public class AddressService {
 	@Autowired
 	private AddressRepository addressRepository;
 	
-	public Address findByCep(String cep) {
-		return addressRepository.findByCep(cep);
-	}
 }

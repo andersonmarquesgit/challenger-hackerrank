@@ -20,12 +20,12 @@ public class AddressValidator implements Validator {
 
 	@Override
 	public void validate(Object target, Errors errors) {
-		String cep = (String) target;
-		Address address = addressService.findByCep(cep);
-		
-		if(address == null) {
-			throw new AddressException("CEP Inválido");
-		}
+//		String cep = (String) target;
+//		Address address = addressService.findByCep(cep);
+//		
+//		if(address == null) {
+//			throw new AddressException("CEP Inválido");
+//		}
 
 	}
 

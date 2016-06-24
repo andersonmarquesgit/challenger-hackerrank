@@ -1,9 +1,12 @@
 package br.com.hack.rest.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -15,16 +18,15 @@ public class Address {
 	@JsonIgnore
     private Integer id;
 
-	private String cep;
+	@ManyToOne
+	private ZipCode zipCode;
 	
-	private String street;
+	@Column(nullable=false)
+	private String number;
 	
-	private String neighborhood;
-	
-	private String city;
-	
-	private String state;
-	
+	@Column(nullable=true)
+	private String complement;
+
 	public Integer getId() {
 		return id;
 	}
@@ -33,43 +35,27 @@ public class Address {
 		this.id = id;
 	}
 
-	public String getCep() {
-		return cep;
+	public ZipCode getZipCode() {
+		return zipCode;
 	}
 
-	public void setCep(String cep) {
-		this.cep = cep;
+	public void setZipCode(ZipCode zipCode) {
+		this.zipCode = zipCode;
 	}
 
-	public String getStreet() {
-		return street;
+	public String getNumber() {
+		return number;
 	}
 
-	public void setStreet(String street) {
-		this.street = street;
+	public void setNumber(String number) {
+		this.number = number;
 	}
 
-	public String getNeighborhood() {
-		return neighborhood;
+	public String getComplement() {
+		return complement;
 	}
 
-	public void setNeighborhood(String neighborhood) {
-		this.neighborhood = neighborhood;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
+	public void setComplement(String complement) {
+		this.complement = complement;
 	}
 }

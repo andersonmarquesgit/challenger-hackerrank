@@ -3,9 +3,10 @@ package br.com.hack.rest.repository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.hack.rest.model.Address;
+import br.com.hack.rest.model.ZipCode;
 
 @Repository
-public interface AddressRepository extends CrudRepository<Address, Integer> {
+public interface ZipCodeRepository extends CrudRepository<ZipCode, Integer> {
 
+	public ZipCode findByZipCode(String zipCode);
 }
