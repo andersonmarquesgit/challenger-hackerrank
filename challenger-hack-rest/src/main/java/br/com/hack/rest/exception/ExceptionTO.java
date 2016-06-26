@@ -6,18 +6,18 @@ public class ExceptionTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private String mensagem;
+	private String message;
 
-	public ExceptionTO(String mensagem) {
-		this.mensagem = mensagem;
+	public ExceptionTO(String message) {
+		this.message = message;
 	}
 
-	public String getMensagem() {
-		return mensagem;
+	public String getMessage() {
+		return message;
 	}
 
-	public void setMensagem(String mensagem) {
-		this.mensagem = mensagem;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 }

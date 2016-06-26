@@ -5,6 +5,10 @@ import org.springframework.stereotype.Repository;
 
 import br.com.hack.rest.model.Address;
 
+/**
+ * @author Anderson
+ *
+ */
 @Repository
 public interface AddressRepository extends CrudRepository<Address, Integer> {
 

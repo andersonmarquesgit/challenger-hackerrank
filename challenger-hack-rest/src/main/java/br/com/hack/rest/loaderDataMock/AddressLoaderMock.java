@@ -11,6 +11,10 @@ import br.com.hack.rest.model.ZipCode;
 import br.com.hack.rest.repository.AddressRepository;
 import br.com.hack.rest.repository.ZipCodeRepository;
 
+/**
+ * @author Anderson
+ *
+ */
 @Component
 public class AddressLoaderMock implements ApplicationListener<ContextRefreshedEvent> {
 

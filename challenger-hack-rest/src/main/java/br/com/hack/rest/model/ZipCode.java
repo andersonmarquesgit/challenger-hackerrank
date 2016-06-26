@@ -13,7 +13,6 @@ public class ZipCode {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-	@JsonIgnore
     private Integer id;
 
 	@Column(nullable=false)
