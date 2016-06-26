@@ -45,6 +45,8 @@ Uma base de dados é carregada automaticamente durante inicialização do sistem
   </ul>
 </ul>
 
+<B>Advanced REST Client:</B> Foi utilizado essa extensão do Google Chrome para os testes das requisições https://goo.gl/kBqdTK
+
 <H2>Stream</H2>
 
 Disponível no pacote <b>br.com.hack.stream</b> está a lógica solicitada para encontrar, dado um stream, o primeiro caracter que não se repede. Criada uma classe main (StreanMain) apenas para demonstrar o uso do StreamUtil. Também está disponível a classe de teste StreamTest. 
